@@ -12,14 +12,34 @@ body{
     background: white url(hiroshi\ sugimoto\ horizon.jpg) no-repeat 50% 350px;
 }
 
+h1,h2{
+    text-align: center;
+}
+
 h1{
     font:bold 1.8;
-    margin: 0 0 0.5em;
+    
 }
 
 h2{
-    font: bold 4.2rem Helvetica, Arial, sans-serif;
-    margin: 0 0 1em;
+    font: bold 4.2rem;
+    
+}
+
+.navigation-bar{
+    
+    background: rgb(132, 175, 189);
+}
+
+.navigation-list{
+    
+    display: flex;
+    margin-left: 1rem;
+
+}
+
+.navigation-list a{
+    padding: 2rem;
 }
 
 
