@@ -108,8 +108,9 @@ a {
     font-style: italic;
 } */
 
-.bio {
+.bio-section {
   background-color: rgb(19, 80, 77);
+  padding: 15rem 5rem;
 }
 
 .accomplishments-section {
