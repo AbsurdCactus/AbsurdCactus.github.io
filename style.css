@@ -61,7 +61,7 @@ ul{
 }
 
 a{
-    color: white;
+    color: lightblue;
     text-decoration: none;
 }
 
@@ -114,11 +114,11 @@ a{
 } */
 
 .bio{
-    background-color: lightseagreen;
+    background-color: rgb(19, 80, 77);
 }
 
-.accomplishments{
-    background-color: rgb(190, 190, 97);
+.accomplishments-section{
+    background-color: rgb(18, 34, 63);
     text-align: center;
     padding: 10rem 2rem;
 }
@@ -130,11 +130,35 @@ a{
 
 }
 
+.accomplishments-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 3rem;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1280px;
+    margin-bottom: 7rem;
+
+
+}
+
 @media (max-width: 28.75em){
     .accomplishments-header{
         font-size: 4rem;
     }
 }
+
+.project-image{
+    height: calc(100%-6.8rem);
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-title {
+    font-size: 2rem;
+    padding: 2rem 0.5rem;
+}
+
 
 .contact-section{
     background-color: gray;
@@ -156,11 +180,11 @@ a{
 
 
 footer{
-    background-color: lightsalmon;
+    background-color: rgb(37, 33, 33);
     display: flex;
     justify-content: space-evenly;
     padding: 2rem;
-    border-top: 4px solid brown;
+    border-top: 4px solid rgb(29, 109, 146);
 }
 
 footer > p {
