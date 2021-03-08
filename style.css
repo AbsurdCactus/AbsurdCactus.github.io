@@ -23,12 +23,12 @@ h1,h2{
 }
 
 h1{
-    font:bold 1.8;
+    font-size: 7rem;
     
 }
 
 h2{
-    font: bold 4.2rem;
+    font-size: 5rem;
     
 }
 
@@ -39,17 +39,28 @@ a{
 .navigation-bar{
     
     background: rgb(132, 175, 189);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
 }
 
 .navigation-list{
     
     display: flex;
-    margin-left: 1rem;
+    margin-left: 3rem;
 
 }
 
 .navigation-list a{
     padding: 2rem;
+    display: block;
+    font-size: 2.2rem;
+}
+
+.navigation-list a:hover{
+    background: black;
 }
 
 .welcome-section{
@@ -96,6 +107,14 @@ a{
 
 footer{
     background-color: lightsalmon;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    border-top: 4px solid brown;
+}
+
+footer > p {
+    margin: 2rem;
 }
 
 
