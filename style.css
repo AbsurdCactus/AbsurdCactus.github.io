@@ -1,195 +1,184 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-*, *::before, *::after {
-    box-sizing: inherit;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
-html { 
-    font-size: 65%;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-
-@media (max-width: 75 em){
-    html{
-        font-size: 60%;
-    }
+html {
+  font-size: 65%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-@media (max-width: 61.25em){
-    html{
-        font-size: 58%;
-    }
+@media (max-width: 75 em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
 }
 
 @media (max-width: 28.75em) {
-    html {
-      font-size: 55%;
-    }
+  html {
+    font-size: 55%;
   }
-
-body{
-    font-family: Arial, Helvetica, sans-serif;
-
-    color: white;
-    /* background: url(hiroshi-sugimoto-horizon.jpg) no-repeat; */
-    font-size: 1.8rem;
-    font-weight: 300;
-    line-height: 1.5;
 }
 
-h1,h2{
-    text-align: center;
-    /* font-weight: 700; */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+  color: white;
+  /* background: url(hiroshi-sugimoto-horizon.jpg) no-repeat; */
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.5;
 }
 
-h1{
-    font-size: 7rem;
-    color: black;
-    
+h1,
+h2 {
+  text-align: center;
+  /* font-weight: 700; */
 }
 
-h2{
-    font-size: 5rem;
-    
+h1 {
+  font-size: 7rem;
+  color: black;
 }
 
-ul{
-    list-style: none;
+h2 {
+  font-size: 5rem;
 }
 
-a{
-    color: lightblue;
-    text-decoration: none;
+ul {
+  list-style: none;
 }
 
-.navigation-bar{
-    
-    background:rgb(80, 94, 107);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    box-shadow: 0 2px 0 rgba(0,0,0,0.4);
-    z-index: 10;
-    
-
+a {
+  color: lightblue;
+  /* text-decoration: none; */
 }
 
-.navigation-list{
-    
-    display: flex;
-    /* margin-left: 3rem; */
-    justify-content: center;
-
+.navigation-bar {
+  background: rgb(80, 94, 107);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 10;
 }
 
-.navigation-list a{
-    padding: 2rem;
-    display: block;
-    font-size: 2.2rem;
+.navigation-list {
+  display: flex;
+  /* margin-left: 3rem; */
+  justify-content: center;
 }
 
-.navigation-list a:hover{
-    background: black;
+.navigation-list a {
+  padding: 2rem;
+  display: block;
+  font-size: 2.2rem;
 }
 
-.welcome-section{
-    background-image: url(hiroshi-sugimoto-horizon.jpg);
-    background-color: green;
-    /* background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
-    justify-content: center;
-    flex-direction: column;
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    align-items: center;
-    
+.navigation-list a:hover {
+  background: black;
+}
+
+.welcome-section {
+  background-image: url(hiroshi-sugimoto-horizon.jpg);
+  background-color: green;
+  /* background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
 }
 
 /* .welcome-section > h1{
     font-style: italic;
 } */
 
-.bio{
-    background-color: rgb(19, 80, 77);
+.bio {
+  background-color: rgb(19, 80, 77);
 }
 
-.accomplishments-section{
-    background-color: rgb(18, 34, 63);
-    text-align: center;
-    padding: 10rem 2rem;
+.accomplishments-section {
+  background-color: rgb(18, 34, 63);
+  text-align: center;
+  padding: 10rem 2rem;
 }
 
-.accomplishments-header{
-    max-width: 640 px;
-    margin: 0 auto 6rem auto;
-    border-bottom: .2rem solid white;
-
+.accomplishments-header {
+  max-width: 640 px;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.2rem solid white;
 }
 
-.accomplishments-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 3rem;
-    width: 100%;
-    margin: 0 auto;
-    max-width: 1280px;
-    margin-bottom: 7rem;
-
-
+.accomplishments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 3rem;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1280px;
+  margin-bottom: 7rem;
 }
 
-@media (max-width: 28.75em){
-    .accomplishments-header{
-        font-size: 4rem;
-    }
+@media (max-width: 28.75em) {
+  .accomplishments-header {
+    font-size: 4rem;
+  }
 }
 
-.project-image{
-    height: calc(100%-6.8rem);
-    width: 100%;
-    object-fit: cover;
+.project-image {
+  height: calc(100%-6.8rem);
+  width: 100%;
+  object-fit: cover;
 }
 
 .project-title {
-    font-size: 2rem;
-    padding: 2rem 0.5rem;
+  font-size: 2rem;
+  padding: 2rem 0.5rem;
 }
 
-
-.contact-section{
-    background-color: gray;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;width: 100%;
-    height: 80vh;
-    padding: 0 2rem;
-    width: 100%;
+.contact-section {
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80vh;
+  padding: 0 2rem;
+  width: 100%;
 }
 
 .contact-section > h4 {
-    font-size: 5rem;
+  font-size: 5rem;
 }
 
+.contact-links{
+    margin: 1.5em;
+}
 
-
-
-
-footer{
-    background-color: rgb(37, 33, 33);
-    display: flex;
-    justify-content: space-evenly;
-    padding: 2rem;
-    border-top: 4px solid rgb(29, 109, 146);
+footer {
+  background-color: rgb(37, 33, 33);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  border-top: 4px solid rgb(29, 109, 146);
 }
 
 footer > p {
-    margin: 2rem;
+  margin: 2rem;
 }
-
-
-
